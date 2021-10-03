@@ -1,0 +1,6 @@
+projectKey=org.example:DevopsInitiation
+serverUrl=http://localhost:9000
+serverVersion=8.9.2.46101
+dashboardUrl=http://localhost:9000/dashboard?id=org.example%3ADevopsInitiation
+ceTaskId=AXunXurjzsMRGKwjG1xu
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXunXurjzsMRGKwjG1xu
