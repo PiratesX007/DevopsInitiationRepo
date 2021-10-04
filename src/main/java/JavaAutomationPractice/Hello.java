@@ -1,13 +1,17 @@
 package JavaAutomationPractice;
 
-public class Hello {
+import org.testng.annotations.Test;
 
-    public static void main(String[] args) {
+
+public class Hello {
+    @Test
+    public void initiation() {
         System.out.println("Hi this isn java class");
 
         for (int i = 0; i < 6; i++) {
             System.out.println(i);
 
         }
+
     }
 }

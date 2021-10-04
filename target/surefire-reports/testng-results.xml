@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-10-04T18:25:27 IST" name="demoSuite" finished-at="2021-10-04T18:25:27 IST" duration-ms="188">
+    <groups>
+    </groups>
+    <test started-at="2021-10-04T18:25:27 IST" name="demoTest" finished-at="2021-10-04T18:25:27 IST" duration-ms="188">
+      <class name="JavaAutomationPractice.Hello">
+        <test-method signature="initiation()[pri:0, instance:JavaAutomationPractice.Hello@2002fc1d]" started-at="2021-10-04T18:25:27 IST" name="initiation" finished-at="2021-10-04T18:25:27 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiation -->
+      </class> <!-- JavaAutomationPractice.Hello -->
+    </test> <!-- demoTest -->
+  </suite> <!-- demoSuite -->
+</testng-results>

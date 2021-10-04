@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="demoSuite" verbose="1">
+    <test name="demoTest">
+        <classes>
+            <class name="JavaAutomationPractice.Hello"/>
+        </classes>
+    </test>
+</suite>
