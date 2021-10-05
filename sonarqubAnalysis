@@ -1,6 +1,6 @@
     node {
         stage('SCM Checkout') {
-            git 'https://github.com/PiratesX007/DevopsInitiationRepo'
+            checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/PiratesX007/DevopsInitiationRepo']]])
         }
         stage('Compile-Package') {
             // Get maven Home path
