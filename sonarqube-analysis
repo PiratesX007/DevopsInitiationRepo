@@ -1,0 +1,22 @@
+    node {
+        stage('SCM') {
+            git 'https://github.com/PiratesX007/DevopsInitiationRepo'
+        }
+        stage('Compile-Package') {
+            // Get maven Home path
+            def mvnHome = tool name:
+            'maven-3', type:'maven'
+            sh "${mvnHome}/bin/mvn package"
+        }
+        stage('SonarQube analysis') {
+            def mvnHome = tool name:
+            'maven-3', type:'maven'
+            withSonarQubeEnv('sonar-phase') {
+                sh "${mvnHome}/bin/mvn sonar:sonar"
+            }
+        }
+        stage('Email Notification') {
+            mail bcc:'', body:'This is the email to notify that email is got failed.', cc:'', from:'', replyTo:
+            '', subject:'Pipeline Status', to:'anubhav.techdalela@gmail.com'
+        }
+    }
