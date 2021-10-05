@@ -47,6 +47,13 @@
             <artifactId>testng</artifactId>
             <version>7.4.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/pl.allegro.tech.build/axion-release-plugin -->
+        <dependency>
+            <groupId>pl.allegro.tech.build</groupId>
+            <artifactId>axion-release-plugin</artifactId>
+            <version>1.13.3</version>
+        </dependency>
+
 
     </dependencies>
 
