@@ -1,4 +1,6 @@
-    node {
+pipeline{
+agent any{tools
+maven "maven-m3"}}
         stage('SCM Checkout') {
             git 'https://github.com/PiratesX007/DevopsInitiationRepo'
         }
