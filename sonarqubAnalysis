@@ -1,20 +1,16 @@
     pipeline {
         agent any
+        tools {
+            maven "maven-m3"
+        }
 
         stages {
             stage('Compile Stage') {
                 steps {
-                    withMaven(maven :'maven-3'){
-                        sh 'mvn clean compile'
-                    }
+                    git 'https://github.com/PiratesX007/DevopsInitiationRepo'
+                    bat 'mvn -Dmaven.test.failure.ignore=true clean package'
                 }
-            }
-            stage('Testing Stage') {
-                steps {
-                    withMaven(maven :'maven-3'){
-                        sh 'mvn test'
-                    }
-                }
+
             }
         }
     }
