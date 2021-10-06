@@ -1,16 +1,10 @@
     pipeline {
         agent any
-        tools {
-            maven "maven-m3"
-        }
-
         stages {
-            stage('Compile Stage') {
+            stage('Git Checkout') {
                 steps {
-                    git 'https://github.com/PiratesX007/DevopsInitiationRepo'
-                    bat 'mvn -Dmaven.test.failure.ignore=true clean package'
+                    git CredentialsId:'github', url:'https://github.com/PiratesX007/DevopsInitiationRepo'
                 }
-
             }
         }
     }
